@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import { motion, cubicBezier } from "framer-motion";
 
+import { Button } from "@/components/ui/button";
+
 import Author from "@/app/Images/author.jpg";
 import Dream from "@/app/Images/final.jpg";
 import inspiration1 from "@/app/Images/inspiration1.jpg";
@@ -25,21 +27,24 @@ export default function Home() {
         >
             <main className="mx-auto grid max-w-prose gap-2 py-16">
                 <Typography variant="h1">Sen Jana Zrzavého, 2024</Typography>
-
-                <Link
-                    href="https://www.instagram.com/sarlotajezkova_/"
-                    rel={"author"}
-                    className="text-muted-foreground"
+                <Button
+                    variant={"link"}
+                    className="w-fit p-0 text-muted-foreground"
+                    asChild
                 >
-                    Šarlota Ježková, 4G
-                </Link>
-
+                    <Link
+                        href="https://www.instagram.com/sarlotajezkova_/"
+                        rel={"author"}
+                        className="text-muted-foreground"
+                    >
+                        Šarlota Ježková, 4G
+                    </Link>
+                </Button>
                 <Image
                     src={Dream}
                     alt="Sen Jana Zrzavého"
                     className="mx-auto my-4 w-3/4"
                 />
-
                 <div className="flex justify-between gap-8">
                     <div>
                         <Typography>
@@ -56,20 +61,17 @@ export default function Home() {
                         className="h-fit max-w-[25%] max-sm:hidden"
                     />
                 </div>
-
                 <Typography
                     variant="blockquote"
                     className="before:content-['\201d'] after:content-['\201c']"
                 >
                     Zdál se mi zvláštní sen, všechny obrazy se mi nějak pomotaly v hlavě.
                 </Typography>
-
                 <Image
                     src={Author}
                     alt="Portrét Jan Zrzavý"
                     className="mx-auto mt-4 h-fit max-w-72 sm:hidden"
                 />
-
                 <div className="mt-8 columns-1 gap-4 sm:columns-2 [&>img:not(:first-child)]:mt-4">
                     <Image
                         src={inspiration1}
