@@ -15,8 +15,8 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link
+                    href="https://fonts.cdnfonts.com/css/century-gothic-paneuropean"
                     rel="stylesheet"
-                    href="https://use.typekit.net/oov2wcw.css"
                 ></link>
             </head>
             <body className="grid grid-cols-[[page-start]_minmax(var(--inline-padding),_1fr)_[content-start]_min(100%_-_var(--inline-padding)_*_2,_1400px)_[content-end]_minmax(var(--inline-padding),_1fr)_[page-end]] bg-background font-serif [--inline-padding:_1rem]">

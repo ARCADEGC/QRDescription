@@ -73,7 +73,7 @@ const config = {
                 "accordion-up": "accordion-up 0.2s ease-out",
             },
             fontFamily: {
-                serif: "century-gothic, sans-serif",
+                serif: "Century Gothic Paneuropean, sans-serif",
             },
         },
     },
